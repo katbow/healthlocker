@@ -11,6 +11,7 @@ defmodule Healthlocker do
       # Start the Ecto repository
       supervisor(Healthlocker.Repo, []),
       supervisor(Healthlocker.ReadOnlyRepo, []),
+      supervisor(ConCache, [[], [name: :hl_cache]])
       # Start the endpoint when the application starts
       supervisor(Healthlocker.Endpoint, []),
       # Start your own worker by calling: Healthlocker.Worker.start_link(arg1, arg2, arg3)
