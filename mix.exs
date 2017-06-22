@@ -69,15 +69,12 @@ defmodule Healthlocker.Mixfile do
      {:appsignal, "~> 1.0"},
      {:wallaby, "~> 0.16.1"},
      {:ecto_factory, "~> 0.0.6"},
-<<<<<<< HEAD
-     {:con_cache, "~> 0.12.0"}]
-=======
+     {:con_cache, "~> 0.12.0"},
      {:mssql_ecto, "~> 0.1"},
      {:mssqlex, "~> 0.6"},
      {:edeliver, "~> 1.4.0"},
      {:distillery, ">= 0.8.0", warn_missing: false}
    ]
->>>>>>> master
   end
 
   # Aliases are shortcuts or tasks specific to the current project.
