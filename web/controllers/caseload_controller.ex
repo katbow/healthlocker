@@ -7,7 +7,7 @@ defmodule Healthlocker.CaseloadController do
     clinician = conn.assigns.current_user
     patient_ids = ConCache.get_or_store(:hl_cache, :team_members, fn () ->
       EPJSTeamMember
-                  |> EPJSTeamMember.patient_ids(clinician.id)
+                  |> EPJSTeamMember.patient_ids(clinician."Staff_ID")
                   |> ReadOnlyRepo.all
       end)
 
