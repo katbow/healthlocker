@@ -12,9 +12,11 @@ defmodule Healthlocker.CaseloadController do
                               where: c."GP_Code" == "yr68Dobil7yD40Ag")
                 end
 
-    patient_ids = EPJSTeamMember
+    patient_ids = ConCache.get_or_store(:hl_cache, :team_members, fn () ->
+      EPJSTeamMember
                   |> EPJSTeamMember.patient_ids(clinician.id)
                   |> ReadOnlyRepo.all
+      end)
 
     hl_users = patient_ids
               |> Enum.map(fn id ->
