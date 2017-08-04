@@ -1,0 +1,28 @@
+<div class="ma3 ma4-m ma4-l mv2 mv3-m mv4-l">
+  <%= render "menu.html", conn: @conn %>
+  <div class="mt6">
+    <%= form_for @changeset, @action, fn f -> %>
+      <div class="mt3">
+        <%= checkbox f, :data_access, class: "checkbox" %>
+        <%= label f, "I allow my anonymous data to be accessed by researchers to
+        drive forward the future of mental health and care" %>
+        <span class="hl-pink"><%= error_tag f, :data_access %></span>
+      </div>
+
+      <div class="mt3">
+        <%= checkbox f, :comms_consent, class: "checkbox" %>
+        <%= label f, :comms_consent do %>
+          I agree to be contacted with relevant newsletters and communications
+          from the trust or their partner organisation the Institute of
+          Psychiatry, Psychology & Neuroscience at King's College London
+          (IoPPN), such as the C4C newsletter. I understand that my details
+          will not be passed onto anyone else.
+        <% end %>
+      </div>
+
+      <div class="tr mt4">
+        <%= submit_primary "Update" %>
+      </div>
+    <% end %>
+  </div>
+</div>

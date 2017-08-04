@@ -1,5 +1,13 @@
-<h1>hi</h1>
-
+<section class="bb bw2 bb--hl-dark-blue pb3 pt4 center">
+  <h3 class="pb2 ph3 ph0-l ma0 tc">Tips: 5 Ways to Wellbeing</h3>
+  <div>
+    <p>Small improvements in our wellbeing can help to decrease some mental
+      health problems and also help us to get more out of life.</p>
+    <p>These 5 actions are proven to improve personal wellbeing. <br>
+      <%= link_to "Read the full document", to: "https://www.gov.uk/government/publications/five-ways-to-mental-wellbeing" %>
+    </p>
+  </div>
+  
   <!-- CONNECT -->
   <section class="bb bw-2 b--hl-grey bw2 mt3 pb3">
     <div class="flex items-start justify-between mt4">
