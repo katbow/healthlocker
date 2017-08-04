@@ -39,7 +39,7 @@
       <header id="header" class="bg-black w-100 ph3 pv3 pv4-ns ph4-m ph4-l tc">
         <nav class="f2 fw3 relative">
           <div class="tc">
-            <a href="/"><%= img_tag("/images/logo.png", class: "w-60 w-50-m mw5") %></a>
+            <a href="/"><%= img_tag("/images/headscape_focus_logo.svg", class: "w-60 w-50-m mw5") %></a>
           </div>
           <i id="open-nav" class="fa fa-bars dim white dib fl pointer absolute top-0 left-0"></i>
           <div class="fr dn dib-m dib-l absolute top-0 right-0">

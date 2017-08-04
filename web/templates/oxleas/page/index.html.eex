@@ -150,7 +150,7 @@
   <h3 class="pa2 ph3 ph0-l ma0 b tc">Stories</h3>
   <article class="ph3">
     <%= if @story do %>
-      <%= render Healthlocker.ComponentView, "like.html", conn: @conn,
+      <%= render Healthlocker.Oxleas.ComponentView, "like.html", conn: @conn,
           post: @story, current_user: @current_user %>
       <%= markdown Healthlocker.PostView.return_string @story.content %>
 

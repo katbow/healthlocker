@@ -1,4 +1,4 @@
-<%= render Healthlocker.CareTeamView, "menu.html", assigns %>
+<%= render Healthlocker.Oxleas.CareTeamView, "menu.html", assigns %>
 
 <div class="pt6">
   <%= if @current_user == @service_user do %>

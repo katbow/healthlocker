@@ -1,2 +1,2 @@
-<%= render Healthlocker.CareTeamView, "menu.html", assigns %>
-<%= render Healthlocker.RoomView, "_room.html", assigns %>
+<%= render Healthlocker.Oxleas.CareTeamView, "menu.html", assigns %>
+<%= render Healthlocker.Oxleas.RoomView, "_room.html", assigns %>
